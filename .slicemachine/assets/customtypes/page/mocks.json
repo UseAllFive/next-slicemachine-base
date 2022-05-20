@@ -1,6 +1,18 @@
 {
-  "id": "a6f2e4da-9b7f-42d8-9cd6-927738c40ce3",
-  "uid": "eos-doloremque-iure",
+  "id": "e507833a-e51c-4ed7-b37b-513d94ede7c7",
+  "uid": "voluptate-architecto-debitis",
   "type": "page",
-  "data": {}
+  "data": {
+    "meta-title": "syndicate vertical web services",
+    "meta-description": "deploy strategic vortals",
+    "meta-image": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?w=900&h=500&fit=crop"
+    }
+  }
 }
