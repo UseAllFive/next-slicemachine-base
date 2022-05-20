@@ -1,6 +1,6 @@
 {
 	"_latest": "0.3.3",
-	"apiEndpoint": "https://breakthrough.prismic.io/api/v2",
+	"apiEndpoint": null,
 	"localSliceSimulatorURL": "http://localhost:3000/slice-simulator",
 	"storybook": "http://localhost:6006",
 	"libraries": [

@@ -1,5 +1,15 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Prismic Setup
+
+1. First, run the following in the root of the project. This will log you into Prismic and allow you to create a new repository or use an existing one. The repositories it creates for you are kind of special in that it won't work with legacy repositories that didn't setup with Slice Machine.
+
+```
+npx @slicemachine/init
+```
+
+2. Add all of the following content types in Prismic that are located in the `customtypes` directory. You can just copy and paste the JSON into the JSON editor in Prismic.
+
 ## Getting Started
 
 First, run the development server:

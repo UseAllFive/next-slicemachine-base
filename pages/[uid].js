@@ -13,6 +13,8 @@ export async function getStaticProps({ params, previewData }) {
 
   try {
     page = await client.getByUID('page', uid)
+    header = await client.getSingle('header')
+    footer = await client.getSingle('footer')
   } catch (err) {}
 
   return {

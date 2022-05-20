@@ -10,10 +10,10 @@ export async function getStaticProps({ params, previewData }) {
 
   const page = await client.getByUID('page', slug)
 
-  // const header = await client.getSingle('header')
-  // const footer = await client.getSingle('footer')
+  const header = await client.getSingle('header')
+  const footer = await client.getSingle('footer')
 
   return {
-    props: { page },
+    props: { page, header, foot },
   }
 }
