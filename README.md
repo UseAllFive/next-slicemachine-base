@@ -50,6 +50,24 @@ There are a few caveats that you should be aware of before creating a Slice Mach
 
 4. You don't have the option to open links in a new window if it's an external link. Instead an `externalLinkComponent` must be set on the `PrismicProvider` in `_app.js`. This contains the global link component but will open it in a new window instead.
 
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Add Prismic Webhooks
+
+If you included any statically generated pages in your project, you'll need to add a webook to deploy a new build on Vercel to make sure those pages update.
+
+1. In your Vercel project, go to "Settings," then "Git Integration." Scroll down to "Deploy Hooks." Create a hook for your main git branch (note: your main branch could also be called master or something else). This will create a URL. Copy the URL.
+2. Go to your Prismic repository, visit "Settings," and then click "Webhooks." Create a new webhook by choosing a name and pasting in the webhook URL you just copied from Vercel. You can leave the "Secret" empty.
+3. Now, whenever you change your content in Prismic, the changes will be reflected on your site.
+
+## Add Prismic Preview
+
+The project should already be setup with Prismic Preview capabilities but make sure you add the correct development URL and staging URLs to the Prismic repository settings.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
@@ -58,9 +76,3 @@ To learn more about Next.js, take a look at the following resources:
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
