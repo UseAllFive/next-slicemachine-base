@@ -14,7 +14,7 @@
 npx @slicemachine/init
 ```
 
-2. Content types should be added automatically via the `customtypes` directory when you first start up Slice Machine UI. Once you're setup after the next few steps, visit the Slice Machine UI and ensure that the follwing content types are added to the UI. You must then click "Push to Prismic" from the UI to ensure those get deployed.
+2. Content types should be added automatically! However if you need the JSON created by the custom types then just check them out in the `/customtypes` directory. Once you're setup after the next few steps, visit the Slice Machine UI and ensure that the follwing content types are added to the UI. You must then click "Push to Prismic" from the UI to ensure those get deployed.
 
 - `header`: Singleton with repeatable links and social links
 - `footer`: Singleton with repeatable links
