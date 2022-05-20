@@ -30,7 +30,7 @@ yarn install
 
 The following will concurrently run Slice Machine UI and Storybook together.
 
-```
+```bash
 yarn dev
 ```
 
