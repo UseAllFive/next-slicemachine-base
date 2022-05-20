@@ -1,0 +1,34 @@
+{
+  "id": "footer",
+  "label": "Footer",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "links": {
+        "config": {
+          "label": "Links",
+          "placeholder": "",
+          "fields": {
+            "text": {
+              "config": {
+                "label": "Text",
+                "placeholder": ""
+              },
+              "type": "Text"
+            },
+            "link": {
+              "config": {
+                "label": "Link",
+                "placeholder": "",
+                "allowTargetBlank": false
+              },
+              "type": "Link"
+            }
+          }
+        },
+        "type": "Group"
+      }
+    }
+  }
+}

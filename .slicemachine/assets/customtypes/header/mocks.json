@@ -1,0 +1,74 @@
+{
+  "id": "bb59676c-01d9-4538-be11-b62797dbf0b9",
+  "uid": "ut-fugit-nisi",
+  "type": "header",
+  "data": {
+    "links": [
+      {
+        "text": "iterate visionary supply-chains",
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "text": "productize end-to-end initiatives",
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "text": "incentivize magnetic solutions",
+        "link": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      },
+      {
+        "text": "leverage sticky partnerships",
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "text": "engineer interactive initiatives",
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "text": "exploit out-of-the-box blockchains",
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      }
+    ],
+    "socials": [
+      {
+        "type": "facebook",
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      },
+      {
+        "type": "facebook",
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "type": "linkedin",
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      }
+    ]
+  }
+}

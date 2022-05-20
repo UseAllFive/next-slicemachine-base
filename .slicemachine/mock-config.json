@@ -1,0 +1,26 @@
+{
+  "_cts": {
+    "page": {},
+    "header": {
+      "links": {},
+      "socials": {}
+    },
+    "footer": {
+      "links": {}
+    }
+  },
+  "slices": {
+    "Hero": {
+      "default": {
+        "primary": {
+          "description": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    }
+  }
+}

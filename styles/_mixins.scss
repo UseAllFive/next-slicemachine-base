@@ -1,0 +1,115 @@
+@use 'variables' as v;
+
+@mixin breakpoint($minimum) {
+  @media (min-width: $minimum) {
+    @content;
+  }
+}
+
+@mixin font(
+  $font-family: v.$font-family,
+  $font-size: (
+    sm: 16px,
+    md: 16px,
+    lg: 16px,
+  ),
+  $letter-spacing: (
+    sm: 0,
+    md: 0,
+    lg: 0,
+  ),
+  $line-height: (
+    sm: 1.2,
+    md: 1.2,
+    lg: 1.2,
+  )
+) {
+  font-family: $font-family;
+  font-size: map-get($font-size, sm);
+  letter-spacing: map-get($letter-spacing, sm);
+  line-height: map-get($line-height, sm);
+
+  @each $key, $breakpoint in v.$breakpoints {
+    @include breakpoint($breakpoint) {
+      font-size: map-get($font-size, $key);
+      letter-spacing: map-get($letter-spacing, $key);
+      line-height: map-get($line-height, $key);
+    }
+  }
+}
+
+// Centered container with a max-width and gutters on both sides
+@mixin container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: v.$max-width + 2 * v.$gutter;
+  padding-left: v.$gutter;
+  padding-right: v.$gutter;
+
+  @include breakpoint(v.$md) {
+    max-width: v.$max-width + 2 * v.$gutter-md;
+    padding-left: v.$gutter-md;
+    padding-right: v.$gutter-md;
+  }
+}
+
+@mixin hover {
+  @media (hover: hover) {
+    @content;
+  }
+}
+
+@mixin slice {
+  padding-bottom: v.$slice-pad;
+  padding-top: v.$slice-pad;
+
+  @include breakpoint(v.$md) {
+    padding-bottom: v.$slice-pad-md;
+    padding-top: v.$slice-pad-md;
+  }
+}
+
+@mixin remove-list-formatting {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin button-reset {
+  appearance: none;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
+  color: inherit;
+  font: inherit;
+  line-height: 1;
+  margin: 0;
+  overflow: visible;
+  padding: 0;
+  width: auto;
+
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+}
+
+@mixin button(
+  $bg: v.$true-black,
+  $color: v.$white,
+  $hover-bg: v.$prismic-purple,
+  $hover-color: v.$white
+) {
+  background: $bg;
+  color: $color;
+  display: inline-flex;
+  padding: 8px 40px;
+  text-align: center;
+  text-decoration: none;
+
+  &:hover {
+    background: $hover-bg;
+    color: $hover-color;
+    text-decoration: none;
+  }
+}

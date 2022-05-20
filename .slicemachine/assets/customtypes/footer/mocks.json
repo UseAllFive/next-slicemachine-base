@@ -1,0 +1,44 @@
+{
+  "id": "058c6130-8d40-4b5c-bc7d-adb3aa4fc327",
+  "uid": "rem-et-iure",
+  "type": "footer",
+  "data": {
+    "links": [
+      {
+        "text": "disintermediate world-class relationships",
+        "link": {
+          "link_type": "Web",
+          "url": "http://google.com"
+        }
+      },
+      {
+        "text": "revolutionize mission-critical networks",
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "text": "synergize scalable models",
+        "link": {
+          "link_type": "Web",
+          "url": "https://slicemachine.dev"
+        }
+      },
+      {
+        "text": "transform rich ROI",
+        "link": {
+          "link_type": "Web",
+          "url": "https://prismic.io"
+        }
+      },
+      {
+        "text": "syndicate revolutionary synergies",
+        "link": {
+          "link_type": "Web",
+          "url": "http://twitter.com"
+        }
+      }
+    ]
+  }
+}
