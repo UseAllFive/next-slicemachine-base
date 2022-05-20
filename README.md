@@ -1,9 +1,10 @@
-## Prerequisits
+## Prerequisites
 
-- Next.js React Framework: [https://nextjs.org/](https://nextjs.org/)
-- Prismic CMS: [https://prismic.io/](https://prismic.io/)
-- Slice Machine: [https://www.slicemachine.dev/](https://www.slicemachine.dev/)
-- Storybook: [https://storybook.js.org/](Storybook)
+- [Next.js React Framework](https://nextjs.org/)
+- [Prismic CMS](https://prismic.io/)
+- [Slice Machine](https://www.slicemachine.dev/)
+- [Storybook](https://storybook.js.org/)
+- [Chromatic](https://www.chromatic.com/) (Optional)
 
 ## Prismic Setup
 
@@ -41,7 +42,7 @@ yarn dev
 
 There are a few caveats that you should be aware of before creating a Slice Machine project.
 
-1. Storybook Controls are missing from Slice Machine UI generation. Anytime you create a new slice or content type in Slice Machine it will generate a new story with mock data. _You must make sure that if you manually add controls to the stories, you shouldn't resave that component via Slice Machine's UI or it will be overwritten_ I reached out to them about fixing this but they're choosing not too: https://github.com/prismicio/slice-machine/issues/441
+1. Storybook Controls are missing from Slice Machine UI generation. Anytime you create a new slice or content type in Slice Machine it will generate a new story with mock data. _You must make sure that if you manually add controls to the stories, you shouldn't resave that component via Slice Machine's UI or it will be overwritten_ I [reached out to them](https://github.com/prismicio/slice-machine/issues/441) about fixing this but they're choosing not too.
 
 2. Mock Data could be handled better and is automatically generated from Slice Machine UI whether you like it or not. It would be nice to be able to control what mock data gets added. You can only really add custom mock text on "Key Text" fields which is annoying. I hope they improve the controlability of mock data in later versions.
 
